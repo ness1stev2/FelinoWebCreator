@@ -1,0 +1,70 @@
+#nosotros{
+  @media (max-width: 992px){
+    padding: 20px;
+  }
+  .backInLeft{
+    animation: backInLeft;
+    animation-duration: 1.5s;
+  }
+  .backInRight{
+    animation: backInRight;
+    animation-duration: 1.5s;
+  }
+  .backOutLeft{
+    animation: backOutLeft;
+    animation-duration: 1.5s;
+  }
+  .backOutRight{
+    animation: backOutRight;
+    animation-duration: 1.5s;
+  }
+  .cards{
+    .text{
+      padding: 0 20px;
+      @media (max-width: 992px){
+        padding: 20px 40px;
+      }
+      h2{
+        font-size: 3rem;
+        color: var(--color-naranja-claro);
+      }
+      p{
+        font-size: 1.1rem;
+        color: white;
+      }
+    }
+    .middle{
+      width: 100%;
+      background: linear-gradient(270deg, #512bd4 14.05%, #d600aa 89.3%);
+      @media (max-width: 992px){
+        border-radius: 20px;
+        overflow: hidden;
+      }
+    }
+  }
+  .circle {
+    color: white;
+    overflow: hidden;
+    margin: 40px auto;
+    opacity: 0;
+    border-radius: 20px;
+    img{
+      height: 30vh;
+      @media (max-width: 992px){
+        height: auto;
+      }
+    }
+  }
+  .circle-left{
+    @extend .circle;
+    background: linear-gradient(270deg, #512bd4 14.05%, #d600aa 89.3%);
+  }
+  .circle-right{
+    @extend .circle;
+    background: linear-gradient(90deg,#512bd4 14.05%,#d600aa 89.3%);
+  }
+  img{
+    object-fit: cover;
+    width: 100%;
+  }
+}

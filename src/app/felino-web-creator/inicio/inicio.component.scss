@@ -1,0 +1,43 @@
+main {
+  video{
+    position: absolute;
+    top: 95px;
+    z-index: -1;
+    width: 100%;
+    min-height: 700px;
+    max-height: 700px;
+    object-fit: cover; /* Ajusta el tamaño del video al contenedor */
+    filter: brightness(0.4);
+    @media (max-width: 768px){
+      top: 0;
+      min-height: 100vh;
+      max-height: 100vh;
+    }
+  }
+  .container{
+    padding: 277px 0 0;
+    h2{
+      font-size: 4rem;
+      color: var(--color-morado);
+      text-shadow: black 0px 0px 20px;
+      animation: backInDown;
+      animation-duration: 2s;
+      @media (max-width: 768px){
+        font-size: 3rem;
+      }
+      .color-diferent{
+        color: var(--color-naranja);
+        text-shadow: white 0px 0px 20px;
+        animation: pulse;
+        animation-duration: 4s;
+      }
+    }
+    p{
+      color: white;
+      font-size: 1.5rem;
+      text-shadow: black 0px 0px 20px;
+      animation: backInLeft;
+      animation-duration: 5s;
+    }
+  }
+}
