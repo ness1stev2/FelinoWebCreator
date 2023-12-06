@@ -1,43 +1,87 @@
 main {
-  video{
+  video {
     position: absolute;
     top: 95px;
     z-index: -1;
     width: 100%;
     min-height: 700px;
     max-height: 700px;
-    object-fit: cover; /* Ajusta el tamaño del video al contenedor */
+    object-fit: cover;
+    /* Ajusta el tamaño del video al contenedor */
     filter: brightness(0.4);
-    @media (max-width: 768px){
+
+    @media (max-width: 768px) {
       top: 0;
       min-height: 100vh;
       max-height: 100vh;
     }
   }
-  .container{
-    padding: 277px 0 0;
-    h2{
+
+  .container {
+    padding: 210px 0 0;
+    height: 758px;
+    @media (max-width: 768px) {
+      height: 100vh;
+
+    }
+
+    h2 {
       font-size: 4rem;
       color: var(--color-morado);
       text-shadow: black 0px 0px 20px;
       animation: backInDown;
       animation-duration: 2s;
-      @media (max-width: 768px){
+
+      @media (max-width: 768px) {
         font-size: 3rem;
       }
-      .color-diferent{
+
+      .color-diferent {
         color: var(--color-naranja);
         text-shadow: white 0px 0px 20px;
         animation: pulse;
         animation-duration: 4s;
       }
     }
-    p{
+
+    /* .slogan {
       color: white;
       font-size: 1.5rem;
       text-shadow: black 0px 0px 20px;
+    } */
+
+    .beneficios {
+      display: flex;
       animation: backInLeft;
       animation-duration: 5s;
+      /* animation: flash 3s 2s; */ /* Inicia la animación después de 3 segundos y dura 2 segundos */
+
+      button {
+        color: black;
+        width: 250px;
+        height: auto;
+        font-size: 1.2rem;
+        font-weight: 500;
+        background: var(--color-naranja-claro);
+        border-radius: 10px;
+        border: none;
+        &:hover {
+          background: #d600aa;
+          color: white;
+        }
+      }
+
+      span{
+        color: var(--color-naranja-claro);
+      }
+      p {
+        color: white;
+        font-size: 1.2rem;
+        width: fit-content;
+        background: linear-gradient(270deg, #512bd4 14.05%, #d600aa 89.3%);
+        border-radius: 0 15px;
+        margin: 0;
+      }
     }
   }
 }

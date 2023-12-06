@@ -15,8 +15,8 @@ export class HeaderComponent {
     } else {
       this.reachedScrollPosition = false;
     }
-    const scrollY = window.scrollY;
-    console.log('Posición del scroll vertical:', scrollY);
+    /* const scrollY = window.scrollY;
+    console.log('Posición del scroll vertical:', scrollY); */
   }
 
 
